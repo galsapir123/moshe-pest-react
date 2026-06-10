@@ -287,7 +287,6 @@ function App() {
         <div className="section-head">
           <span className="tag">לקוחות מספרים</span>
           <h2>שירות שמרגיש אישי, מסודר ומקצועי</h2>
-          <p className="placeholder-note">המלצות לדוגמה לתצוגת האתר — מומלץ להחליף בהמלצות אמיתיות לפני פרסום סופי.</p>
         </div>
         <div className="review-grid">
           {testimonials.map(review => (
