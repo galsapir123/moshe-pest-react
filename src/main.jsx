@@ -56,7 +56,7 @@ function CockroachIcon() {
 }
 
 const CONTACT = {
-  name: 'משה מימון',
+  name: 'מימון הדברות',
   title: 'מדביר מורשה בדירות',
   license: 'רישיון מדביר בדירות מס׳ 3754',
   warranty: 'אחריות עד חצי שנה לפי סוג טיפול',
@@ -287,7 +287,6 @@ function App() {
         <div className="section-head">
           <span className="tag">לקוחות מספרים</span>
           <h2>שירות שמרגיש אישי, מסודר ומקצועי</h2>
-          <p className="placeholder-note">המלצות לדוגמה לתצוגת האתר — מומלץ להחליף בהמלצות אמיתיות לפני פרסום סופי.</p>
         </div>
         <div className="review-grid">
           {testimonials.map(review => (
@@ -310,7 +309,7 @@ function App() {
         <div className="contact-info">
           <span className="tag">יצירת קשר</span>
           <h2>רוצים לבדוק מה יש בבית? שלחו הודעה עכשיו</h2>
-          <p>אפשר לשלוח תמונה, לתאר את הבעיה או לבחור “לא בטוח” בטופס. משה יחזור אליכם עם הכוונה ראשונית.</p>
+          <p>אפשר לשלוח תמונה, לתאר את הבעיה או לבחור “לא בטוח” בטופס.  נחזור אליכם עם הכוונה ראשונית.</p>
           <div className="contact-buttons">
             <a href={`tel:${CONTACT.phoneDial}`}><Phone /> {CONTACT.phoneDisplay}</a>
             <a href={whatsappUrl('שלום משה, אני צריך הדברה')} target="_blank"><MessageCircle /> וואטסאפ</a>
@@ -331,18 +330,7 @@ function App() {
           </label>
           <label className="wide">מה ראיתם בבית?<textarea value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} placeholder="כתבו בקצרה איפה ראיתם את המזיק, כמה זמן זה קורה ואם יש תמונה לשליחה בוואטסאפ" /></label>
           <button className="btn primary wide" type="submit"><Send /> שליחה לוואטסאפ</button>
-          <button
-            className="btn ghost wide"
-            type="button"
-            onClick={handleEmailSend}
-            disabled={emailStatus === 'sending' || emailStatus === 'sent'}
-          >
-            <Mail />
-            {emailStatus === 'idle' && 'שליחה במייל'}
-            {emailStatus === 'sending' && 'שולח...'}
-            {emailStatus === 'sent' && 'ההודעה נשלחה! ✓'}
-            {emailStatus === 'error' && 'שגיאה בשליחה — נסו שנית'}
-          </button>
+          
         </form>
       </section>
 
