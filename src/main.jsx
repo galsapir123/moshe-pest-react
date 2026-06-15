@@ -64,8 +64,6 @@ const CONTACT = {
   phoneDial: '+972524832432',
   whatsapp: '972524832432',
   email: 'Moshemaymon84@gmail.com',
-  instagram: '#',
-  facebook: '#',
   areas: ['דירות מגורים', 'משרדים קטנים', 'רכוש משותף בבניין עד 16 דירות/משרדים']
 };
 
@@ -166,7 +164,7 @@ function App() {
         <div className="hero-orb two" />
         <div className="hero-content">
           <div className="eyebrow"><Sparkles size={16} /> זמין לקריאות • אחריות עד חצי שנה</div>
-          <h1>מנתחים, מדבירים <span className="hero-highlight">ומבטיחים</span></h1>
+          <h1>מנטרים, מדבירים <span className="hero-highlight">ומבטיחים</span></h1>
           <p className="hero-subtitle"> מימון הדברות מספק הדברה מקצועית לדירות, משרדים קטנים ורכוש משותף — עם אבחון ברור, עבודה נקייה, יחס אישי והסבר מלא לפני ואחרי הטיפול.</p>
           <div className="hero-actions">
             <a className="btn primary" href={whatsappUrl('שלום משה, אני צריך הדברה ואשמח להצעת מחיר')} target="_blank"><MessageCircle /> שלח וואטסאפ</a>
@@ -314,8 +312,6 @@ function App() {
             <a href={`tel:${CONTACT.phoneDial}`}><Phone /> {CONTACT.phoneDisplay}</a>
             <a href={whatsappUrl('שלום משה, אני צריך הדברה')} target="_blank"><MessageCircle /> וואטסאפ</a>
             <a href={`mailto:${CONTACT.email}`}><Mail /> מייל</a>
-            <a href={CONTACT.facebook}><span className="social-letter">f</span> פייסבוק</a>
-            <a href={CONTACT.instagram}><span className="social-letter">◎</span> אינסטגרם</a>
           </div>
         </div>
         <form className="lead-form" onSubmit={(e) => { e.preventDefault(); window.open(whatsappUrl(leadMessage), '_blank'); }}>
