@@ -167,7 +167,7 @@ function App() {
         <div className="hero-content">
           <div className="eyebrow"><Sparkles size={16} /> זמין לקריאות • אחריות עד חצי שנה</div>
           <h1>מנתחים, מדבירים <span className="hero-highlight">ומבטיחים</span></h1>
-          <p className="hero-subtitle">משה מימון מספק הדברה מקצועית לדירות, משרדים קטנים ורכוש משותף — עם אבחון ברור, עבודה נקייה, יחס אישי והסבר מלא לפני ואחרי הטיפול.</p>
+          <p className="hero-subtitle"> מימון הדברות מספק הדברה מקצועית לדירות, משרדים קטנים ורכוש משותף — עם אבחון ברור, עבודה נקייה, יחס אישי והסבר מלא לפני ואחרי הטיפול.</p>
           <div className="hero-actions">
             <a className="btn primary" href={whatsappUrl('שלום משה, אני צריך הדברה ואשמח להצעת מחיר')} target="_blank"><MessageCircle /> שלח וואטסאפ</a>
             <a className="btn ghost" href={`tel:${CONTACT.phoneDial}`}><Phone /> התקשר עכשיו</a>
